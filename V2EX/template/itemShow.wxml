@@ -1,0 +1,28 @@
+<template name="itemShow">
+  <view class="xpage">
+    <view class="main" wx:for="{{topicsItem}}" wx:for-item="topicsItem" wx:key="unique">
+      <view class="post-box" wx:if="{{topicsItem.member.username}}" catchtap="onTouch" id="{{topicsItem.id}}">
+        <view class="user-info">
+          <view class="user-info" catchtap="myUserInfo" id="{{topicsItem.member.id}}">
+            <image src="http:{{topicsItem.member.avatar_large}}" />
+            <text>{{topicsItem.member.username}}</text>
+          </view>
+          <view>
+            <text>{{topicsItem.created}}</text>
+          </view>
+        </view>
+        <view class="topicsTitle">
+          <text>{{topicsItem.title}}</text>
+
+        </view>
+        <view class="topicscontent">
+          <text maxlength="13">{{topicsItem.content}}</text>
+        </view>
+      </view>
+      <view class="commentTab">
+        <text>{{topicsItem.node.title}}</text>
+        <text>{{topicsItem.replies}}</text>
+      </view>
+    </view>
+  </view>
+</template>

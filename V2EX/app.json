@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/nodeList/nodeList",
+    "pages/news/news",
+    "pages/post/post",
+    "pages/nodeDetail/nodeDetail",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#555",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "White"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "HOT",
+        "iconPath": "images/tabBar/hotest.png",
+        "selectedIconPath": "images/tabBar/hotest_on.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "NEWS",
+        "iconPath": "images/tabBar/lastest.png",
+        "selectedIconPath": "images/tabBar/lastest_on.png"
+      },
+      {
+        "pagePath": "pages/nodeList/nodeList",
+        "text": "NODELIST",
+        "iconPath": "images/tabBar/node.png",
+        "selectedIconPath": "images/tabBar/node_on.png"
+      }
+    ]
+  }
+}

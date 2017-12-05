@@ -1,0 +1,56 @@
+/* pages/user/user.wxss */
+
+.main {
+  padding: 15px;
+}
+
+.tag {
+  background-color: #f1f1f1;
+  padding: 5px;
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tag image {
+  height: 21px;
+  width: 21px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1.5px #e2e2e2;
+  padding-bottom: 5px;
+}
+
+.userInfoImg image {
+  height: 98px;
+  width: 98px;
+  border-radius: 50%;
+}
+
+.userInfoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.tagList {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 15px;
+}
+
+.bioTab {
+  word-wrap: break-word;
+  overflow: hidden;
+  margin-top: 15px;
+  background-color: rgb(250, 246, 189);
+  border-radius: 10px;
+  padding: 10px;
+}

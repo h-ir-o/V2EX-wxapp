@@ -1,0 +1,2 @@
+/* pages/nodeDetail/nodeDetail.wxss */
+@import "../../template/itemShow.wxss";

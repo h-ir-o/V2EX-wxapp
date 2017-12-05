@@ -1,0 +1,2 @@
+<import src="../../template/itemShow.wxml" />
+<template is="itemShow" data="{{topicsItem:hotTopics}}" />

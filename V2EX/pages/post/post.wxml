@@ -1,0 +1,49 @@
+<view class="main" wx:if="{{post.title}}">
+  <view class="main-info">
+    <view class="main-title">
+      <text>“{{post.title}}”</text>
+    </view>
+    <view class="user-info">
+      <view class="user-info-main">
+        <view class="user-info-img">
+          <image src="http:{{post.member.avatar_large}}" catchtap="myUserInfo" id="{{post.member.id}}" />
+        </view>
+        <view class="user-info-text">
+          <text>{{post.member.username}}</text>
+          <text>{{post.created}}</text>
+        </view>
+      </view>
+      <view class="user-info-replies">
+        <text>评论:{{post.replies}}</text>
+      </view>
+    </view>
+    <view class="content">
+      <text>{{post.content}}</text>
+    </view>
+  </view>
+
+  <view class="comment" wx:if="{{comment[0]}}">
+    <view wx:for="{{comment}}" wx:for-item="comment" wx:key="unique">
+      <view class="comment-box">
+        <view class="comment-info">
+          <view catchtap="myUserInfo" id="{{comment.member.id}}">
+            <image src="http:{{comment.member.avatar_large}}" />
+          </view>
+          <view class="comment-info-text ">
+            <text>{{comment.member.username}}</text>
+            <text>{{comment.created}}</text>
+          </view>
+          <view class="topicUp" wx:if="{{comment.member.id==post.member.id}}">
+            <text>楼主</text>
+          </view>
+        </view>
+        <view class="content ">
+          <text>{{comment.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content " wx:else>
+    <text wx:if="{{post.title}} ">该话题暂时还有评论</text>
+  </view>
+</view>

@@ -1,0 +1,91 @@
+/**index.wxss**/
+
+page {
+  background-color: #efeff3;
+}
+
+.xpage {
+  background-color: #fff;
+}
+
+.main {
+  border-bottom: 5px solid #efeff3;
+}
+
+.post-box {
+  padding: 15px 10px 0px 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info image {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+.user-info text {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.topicsTitle {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.topicsTitle text {
+  font-size: 17px;
+  color: #353535;
+  display: -webkit-box;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.topicscontent {
+  margin: 10px 0;
+}
+
+.topicscontent text {
+  font-size: 13px;
+  color: #353535;
+  word-wrap: break-word; /*一行单词中实在没有其他靠谱的换行点的时候换行。*/
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2; /** 显示的行数 **/
+  overflow: hidden; /** 隐藏超出的内容 **/
+}
+
+.commentTab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentTab text {
+  font-size: 14px;
+  color: #888;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.commentTab text:first-child {
+  border-radius: 0px 12px 0px 0px;
+  padding: 5px 5px 5px 5px;
+}
+
+.commentTab text:last-child {
+  border-radius: 12px 0px 0px 0px;
+  padding: 5px 10px 5px 8px;
+}

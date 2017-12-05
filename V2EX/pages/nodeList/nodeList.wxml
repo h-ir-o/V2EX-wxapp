@@ -1,0 +1,16 @@
+<view class="main">
+  <view class="nodeList">
+    <view class="nodeListBox" catchtap="nodeDetail" wx:for="{{nodeList}}" wx:for-item="nodeList" wx:key="unique" id="{{nodeList.id}}">
+      <view class="nodeInfo">
+        <view class="nodeInfo-logo">
+          <text class="nodeInfo-logo-text">{{nodeList.title}}</text>
+        </view>
+        <view class="nodeInfo-text">
+          <text id="ntitle">{{nodeList.title}}</text>
+          <text id="ncontent" wx:if="{{nodeList.header}}">{{nodeList.header}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

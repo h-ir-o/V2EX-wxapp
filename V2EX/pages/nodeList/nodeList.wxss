@@ -1,0 +1,63 @@
+/* pages/nodeList/nodeList.wxss */
+
+.main {
+  padding: 0 5px;
+}
+
+.nodeList {
+  display: flex;
+  flex-direction: column;
+}
+
+.nodeListBox {
+  border-bottom: solid 1px #ccc;
+}
+
+.nodeInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.nodeInfo-logo {
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nodeInfo-logo-text {
+  width: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nodeInfo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nodeInfo-text #ntitle {
+  font-size: 18px;
+}
+
+.nodeInfo-text #ncontent {
+  font-size: 14px;
+  color: #aaa;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

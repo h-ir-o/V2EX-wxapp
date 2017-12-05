@@ -1,0 +1,45 @@
+<view class="main" wx:if="{{myUserInfo.id}}">
+  <view class="userInfo">
+    <view class="userInfoImg">
+      <image src="http:{{myUserInfo.avatar_large}}" />
+    </view>
+    <view class="userInfoText">
+      <text>ID:{{myUserInfo.id}}</text>
+      <text style="font-weight: bold;">{{myUserInfo.username}}</text>
+      <text>{{myUserInfo.tagline}}</text>
+    </view>
+  </view>
+  <view class="tagList">
+    <view class="tag" wx:if="{{myUserInfo.website}}">
+      <image src="https://www.v2ex.com/static/img/social_home.png" />
+      <text>{{myUserInfo.website}}</text>
+    </view>
+    <view class="tag" wx:if="{{myUserInfo.twitter}}">
+      <image src="https://www.v2ex.com/static/img/social_twitter.png" />
+      <text>{{myUserInfo.twitter}}</text>
+    </view>
+    <view class="tag" wx:if="{{myUserInfo.github}}">
+      <image src="https://www.v2ex.com/static/img/social_github.png" />
+      <text>{{myUserInfo.github}}</text>
+    </view>
+    <view class="tag" wx:if="{{myUserInfo.psn}}">
+      <image src="https://www.v2ex.com/static/img/social_ps.png" />
+      <text>{{myUserInfo.psn}}</text>
+    </view>
+    <view class="tag" wx:if="{{myUserInfo.location}}">
+      <image src="https://www.v2ex.com/static/img/social_geo.png" />
+      <text>{{myUserInfo.location}}</text>
+    </view>
+    <view class="tag" wx:if="{{myUserInfo.btc}}">
+      <image src="https://www.v2ex.com/static/img/social_btc.png" />
+      <text>{{myUserInfo.btc}}</text>
+    </view>
+  </view>
+  <view class="bioTab" wx:if="{{myUserInfo.bio}}">
+    <text>——“{{myUserInfo.bio}}”</text>
+  </view>
+  <view class="bioTab" wx:else>
+    <text>——“这个家伙很懒，什么都没有留下。”</text>
+  </view>
+</view>
+<text style="position:absolute;left:0;bottom:0">剩余调用次数：{{myUserInfoHeader}}</text>
